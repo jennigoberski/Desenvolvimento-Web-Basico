@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes</title>
+    <style>
+        h1{
+            color: hotpink;
+        }
+        #titulo3{
+            color: dodgerblue;
+        }
+        .cor-padrao{
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <!--Inline: maior prioridade-->
+    <!--Problemas: só funciona para esse elemento
+    Pode ocorrer quebra de padrão-->
+    <h1 style="color:blueviolet">Título 1</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione fugiat laborum, libero dignissimos omnis modi aliquid tempore reprehenderit repellat tempora officia voluptas deserunt, maxime ullam in blanditiis sunt molestias quo accusantium odit fuga dolorem incidunt? Asperiores quo recusandae amet in officia est quia culpa distinctio iste, nulla rerum aliquid laboriosam.</p>
+
+    <!--Incorporado: segundo na lista de prioridades -->
+    <!--criar uma área aonde são adicionados os estilos-->
+    <h1>Título 2</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione fugiat laborum, libero dignissimos omnis modi aliquid tempore reprehenderit repellat tempora officia voluptas deserunt, maxime ullam in blanditiis sunt molestias quo accusantium odit fuga dolorem incidunt? Asperiores quo recusandae amet in officia est quia culpa distinctio iste, nulla rerum aliquid laboriosam.</p>
+
+    <!--terceiro na lista de prioridades-->
+    <!--funciona apenas para quem tem esse identificador-->
+    <h1 id="titulo3">Título 3</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione fugiat laborum, libero dignissimos omnis modi aliquid tempore reprehenderit repellat tempora officia voluptas deserunt, maxime ullam in blanditiis sunt molestias quo accusantium odit fuga dolorem incidunt? Asperiores quo recusandae amet in officia est quia culpa distinctio iste, nulla rerum aliquid laboriosam.</p>
+
+    <!--quarto na lista de prioridades
+    funciona para quem tem essa classe-->
+    <h1>Título 4</h1>
+    <p class="cor-padrao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione fugiat laborum, libero dignissimos omnis modi aliquid tempore reprehenderit repellat tempora officia voluptas deserunt, maxime ullam in blanditiis sunt molestias quo accusantium odit fuga dolorem incidunt? Asperiores quo recusandae amet in officia est quia culpa distinctio iste, nulla rerum aliquid laboriosam.</p>
+
+    <h1>Título 5</h1>
+    <p class="cor-padrao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione fugiat laborum, libero dignissimos omnis modi aliquid tempore reprehenderit repellat tempora officia voluptas deserunt, maxime ullam in blanditiis sunt molestias quo accusantium odit fuga dolorem incidunt? Asperiores quo recusandae amet in officia est quia culpa distinctio iste, nulla rerum aliquid laboriosam.</p>
+</body>
+</html>
