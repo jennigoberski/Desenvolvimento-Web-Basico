@@ -1,11 +1,49 @@
-h1 {
-    color: hotpink;
+body {
+    font-family: Helvetica;
+    font-size: 20px;
 }
 
-#titulo3 {
-    color: dodgerblue;
+header,
+footer {
+    background-color: #fff2cc;
+    display: block;
 }
 
-.cor-padrao {
-    color: darkblue;
+footer {
+    height: 50px;
+    text-align: center;
+}
+
+#logo {
+    width: 200px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+main {
+    padding: 50px;
+}
+
+a {
+    text-decoration: none;
+    /*Tirou o sublinhado dos links*/
+    text-transform: uppercase;
+    color: black;
+    font-size: 18px;
+}
+
+li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav {
+    flex: 1 1 auto;
+    text-align: right;
+}
+
+img,
+div,
+nav {
+    display: block;
 }
