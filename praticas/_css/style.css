@@ -1,0 +1,50 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /*topo, direita, embaixo, esquerda*/
+    margin: 20px 10px 20px 10px;
+    border: 2px solid #b56de6;
+}
+
+.cabecalho{
+    background-color: #d09df1;
+}
+
+.cabecalho p{
+    font-size: 36px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+.rodape p{
+    background-color: #d09df1;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.topnav{
+    background-color: #b56de6;
+    padding: 10px;
+}
+
+.topnav li{
+    display: inline;
+}
+
+.topnav li#sobre{
+    /*O padrão do float é left*/
+    float: right;
+} 
+
+.topnav a{
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+    transition: .2s; /*intervalo de tempo para trocar o estilo ao passar o mouse*/
+}
+
+.topnav a:hover{
+    background-color: #dab4f1;
+    color: black;
+}
