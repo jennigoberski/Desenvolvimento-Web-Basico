@@ -3,6 +3,11 @@
     flex-direction: column;
 }
 
+.pai_2{
+    display: flex;
+    flex-direction: row;
+}
+
 .filho{
     width: 300px;
     height: 150px;
@@ -56,16 +61,15 @@ header, footer{
     color:#f8f4f5;
     font-size: 18px;
     text-align: center;
-    flex-grow: 2;
+    flex-grow: 1;
 }
 
 .conteudo3{
     height: 50px;
-    width: 400px;
     background-color:#95b1e4;
     margin: 5px;
     color:#f8f4f5;
     font-size: 18px;
     text-align: center;
-    flex-grow: 2;  
+    flex-grow: 1;  
 }
