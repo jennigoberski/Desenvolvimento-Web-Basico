@@ -1,0 +1,31 @@
+.pai{
+    display: flex;
+    height: 500px;
+   /* flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    align-content: space-around;*/
+}
+
+.filho{
+    width: 300px;
+    height: 150px;
+    background-color:#d64777;
+    margin: 5px;
+    color:#f8f4f5;
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+.filho2{
+    /*order: valor positivo vai para o final da fila*/
+    /*valor negativo vai para o começo*/
+    width: 300px;
+    height: 150px;
+    background-color:#d64777;
+    margin: 5px;
+    color:#f8f4f5;
+    font-size: 18px;
+    flex-grow: 2;
+}
