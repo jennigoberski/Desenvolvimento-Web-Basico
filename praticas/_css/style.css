@@ -1,12 +1,12 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     /*topo, direita, embaixo, esquerda*/
     margin: 20px 10px 20px 10px;
-    border: 2px solid #b56de6;
+    border: 2px solid #CD5C5C;
 }
 
 .cabecalho, .rodape{
-    background-color: #d09df1;
+    background-color: #F08080;
 }
 
 .cabecalho p{
@@ -23,7 +23,7 @@ body{
 }
 
 .topnav{
-    background-color: #b56de6;
+    background-color: #CD5C5C;
     padding: 10px;
 }
 
@@ -44,7 +44,7 @@ body{
 }
 
 .topnav a:hover{
-    background-color: #dab4f1;
+    background-color: #F08080;
     color: black;
     padding-top: 10px;
 }
@@ -59,30 +59,43 @@ body{
 
 .conteudo img{
     display: block;
-    width: 150px;
+    width: 170px;
     padding-top: 5px;
     padding-bottom: 5px;
     margin: 0px auto 0px auto;
-    box-shadow: 1px 1px 4px #b56de6;
+    box-shadow: 1px 1px 4px #F08080;
+}
+
+.conteudo img#fotoautor{
+    width: 500px;
 }
 
 .conteudo h2{
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .conteudo p{
     text-align: justify;
     line-height: 1.5;
+    margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
 }
 
+.conteudo h3{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 table#detalhes{
-    border: 1px solid #9825e6;
+    border: 1px solid #CD5C5C;
    margin:  20px auto 20px auto;
 }
 
@@ -94,27 +107,28 @@ table#detalhes caption{
 
 table#detalhes td{
     font-size: 12px;
-    border: 1px solid #9825e6;
+    border: 1px solid #793a3a;
     padding: 10px;
+    font-weight: bold;
 }
 
 table#detalhes td.ce{
-    background-color: #ad4eec;
-    color: #f4f0f7;
+    background-color: #CD5C5C;
+    color: #fde4e8;
     text-align: right;
 }
 
 table#detalhes td.cd{
-    background-color:#dab4f1;
+    background-color:#F08080;
     color: black;
     text-align: left;
 }
 
 hr{
-    border: 1px solid #b56de6;
+    border: 1px solid #CD5C5C;
     width: 500px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     
 }
 
