@@ -1,0 +1,57 @@
+header, footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: start;
+    background-color: rgb(49, 172, 221);
+    border: 2px solid #656668;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.pai{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: "f1 f3 f2 f2 f2";
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.filho1{
+    grid-area: f1;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.filho2{
+    grid-area: f2;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;  
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.filholinha {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    grid-area: f3;
+    align-items: center;
+    
+    border-right: 1px solid rgb(129, 123, 123);
+}
+
