@@ -1,0 +1,56 @@
+header, footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: start;
+    background-color: rgb(49, 172, 221);
+    border: 2px solid #656668;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.pai{
+    display: grid;
+    grid-template-areas: "f1 f1 f1" "f2 f3 f4" "f5 . f6";
+    gap: 10px;
+    margin: 40px;
+}
+
+.filho{
+    background-color: aquamarine;
+    padding: 10px;
+    border: 2px solid rgb(12, 15, 14);
+    border-radius: 5px;
+    
+}
+
+.filho1{
+    grid-area: f1;
+    background-color: chartreuse;
+}
+
+.filho2{
+    grid-area: f2;
+    background-color:gold;
+}
+
+.filho3{
+    grid-area: f3;
+    background-color: cornflowerblue;
+}
+
+.filho4{
+    grid-area: f4;
+    background-color: deeppink;
+}
+
+.filho5{
+    grid-area: f5;
+    background-color: rgb(14, 151, 14);
+}
+
+.filho6{
+    grid-area: f6;
+    background-color:gold;
