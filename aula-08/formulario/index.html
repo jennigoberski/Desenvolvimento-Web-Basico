@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/script.js"></script>
+    <title>Formulário</title>
+</head>
+
+<body>
+    <!-- <form action="coleta.html" method="post"></form> -->
+    <h3>Formulário de Cadastro</h3>
+
+    <label for="nome">Nome: </label><br>
+    <input type="text" name="nome" id="nome" autofocus><br>
+
+    <label for="sobrenome">Sobrenome: </label><br>
+    <input type="text" name="sobrenome" id="sobrenome"><br>
+
+    <p>Gênero: </p>
+    <label for="feminino">Feminino</label>
+    <input type="radio" name="genero" id="feminino" value="1"><br>
+
+    <label for="masculino">Masculino</label>
+    <input type="radio" name="genero" id="masculino" value="2"><br><br>
+
+    <label for="senha">Senha: </label><br>
+    <input type="password" name="senha" id="senha" min="8" max="20"><br><br>
+
+    <label for="estado">Estado de origem: </label><br>
+    <select name="estado" id="estado">
+        <!--Sul-->
+        <option value="pr">Paraná</option>
+        <option value="sc">Santa Catarina</option>
+        <option value="rs">Rio Grande do Sul</option>
+        <!--Suldeste-->
+        <option value="sp">São Paulo</option>
+        <option value="mg">Mina Gerais</option>
+        <option value="rj">Rio de Janeiro</option>
+        <option value="es">Espiríto Santo</option>
+        <!--Centro-oeste-->
+        <option value="mt">Mato Grosso</option>
+        <option value="ms">Mato Grosso do Sul</option>
+        <option value="go">Goiás</option>
+        <!--Norte-->
+        <option value="ac">Acre</option>
+        <option value="ro">Rondônia</option>
+        <option value="rr">Roraima</option>
+        <option value="am">Amazonas</option>
+        <option value="pr">Para</option>
+        <option value="to">Tocântins</option>
+        <!--Nordeste-->
+        <option value="ma">Maranhão</option>
+        <option value="pi">Piauí</option>
+        <option value="ba">Bahia</option>
+        <option value="ce">Ceará</option>
+        <option value="rn">Rio Grande do Norte</option>
+        <option value="pb">Paraíba</option>
+        <option value="pe">Pernambuco</option>
+        <option value="al">Alagoas</option>
+        <option value="se">Sergipe</option>
+    </select>
+
+    <label for="senha">Senha: </label><br>
+    <input type="password" name="senha" id="senha">
+
+</body>
+
+</html>
