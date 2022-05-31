@@ -3,9 +3,9 @@ function exerc1() {
     var num2 = window.prompt("Informe o segundo número: ");
 
     if (num1 > num2) {
-        document.getElementById("texto_display").innerHTML = `Em ordem crescente: ${num2} , ${num1}`; 
+        document.getElementById("texto_display").innerHTML = `Em ordem crescente: ${num2} , ${num1}`;
     } else {
-        document.getElementById("texto_display").innerHTML = `Em ordem crescente: ${num1} , ${num2}`; 
+        document.getElementById("texto_display").innerHTML = `Em ordem crescente: ${num1} , ${num2}`;
     }
 }
 
@@ -18,8 +18,8 @@ function exerc2() {
         pesoIdeal = (62.1 * altura) - 44.7;
 
         document.getElementById("texto_display").innerHTML = `O seu peso ideal é ${pesoIdeal.toFixed(2)}`;
-    } 
-    else if(genero == 'M' || genero == 'm' || genero == 'masculino' || genero == 'Masculino') {
+    }
+    else if (genero == 'M' || genero == 'm' || genero == 'masculino' || genero == 'Masculino') {
         pesoIdeal = (72.7 * altura) - 58;
 
         document.getElementById("texto_display").innerHTML = `O seu peso ideal é ${pesoIdeal.toFixed(2)}`;
@@ -35,7 +35,7 @@ function exerc3() {
         document.getElementById("texto_display").innerHTML = `O menor número digitado foi ${num1}`;
     } else if (num2 < num1 && num2 < num3) {
         document.getElementById("texto_display").innerHTML = `O menor número digitado foi ${num2}`;
-    } else if(num3 < num1 && num3 < num2) {
+    } else if (num3 < num1 && num3 < num2) {
         document.getElementById("texto_display").innerHTML = `O menor número digitado foi ${num3}`;
     }
 }
@@ -56,12 +56,12 @@ function exerc4() {
 
 function exerc5() {
     var numero = window.prompt("Informe um número: ");
-    
+
     if (numero % 2 == 0 && numero % 3 == 0) {
         document.getElementById("texto_display").innerHTML = `O número ${numero} é divísivel por 2 e 3.`;
-    } else if(numero % 2 == 0){
+    } else if (numero % 2 == 0) {
         document.getElementById("texto_display").innerHTML = `O número ${numero} é divísivel somente por 2.`;
-    } else if(numero % 3 == 0) {
+    } else if (numero % 3 == 0) {
         document.getElementById("texto_display").innerHTML = `O número ${numero} é divísivel somente por 3.`;
     } else {
         document.getElementById("texto_display").innerHTML = `O número ${numero}  não é divísivel  nem por 2 e nem por 3.`;
@@ -71,9 +71,9 @@ function exerc5() {
 function exerc6() {
     var numero = window.prompt("Informe um número: ");
 
-    if(numero % 2 == 0){
+    if (numero % 2 == 0) {
         document.getElementById("texto_display").innerHTML = `O número ${numero} é divísivel  por 2.`;
-    } else if(numero % 7 == 0) {
+    } else if (numero % 7 == 0) {
         document.getElementById("texto_display").innerHTML = `O número ${numero} é divísivel  por 7.`;
     }
 }
@@ -108,3 +108,57 @@ function exerc7() {
             break;
     }
 }
+
+function exerc8() {
+    var numero = 2;
+
+    for (let index = 4; index <= 20; index++) {
+        if (index % 2 == 0) {
+            numero += index;
+        }
+
+    }
+    document.getElementById("texto_display").innerHTML = `A soma de todos os pares entre 1 e 20 é ${numero}!`;
+}
+
+function exerc9() {
+    var numero = parseInt(window.prompt("Informe um número: "));
+
+    var resposta = document.getElementById("texto_display");
+    var tabuada = '';
+
+    for (var count = 1; count <= 10; count++)
+        tabuada += numero + " x " + count + " = " +
+            numero * count + "<br />";
+
+    resposta.innerHTML = tabuada;
+}
+
+function exerc10() {
+    var numero = parseInt(window.prompt("Informe um número: "));
+
+    var resposta = document.getElementById("texto_display");
+    var resultado = 1;
+    var fatorial = '';
+
+    if (numero === 0 || numero === 1) {
+        resposta.innerHTML = fatorial = numero + '! = 1';
+    } else {
+        fatorial = numero + "! = ";
+        for (var count = numero; count > 0; count--) {
+            if (count !== 1) {
+                fatorial += count + " x ";
+                resultado *= count;
+                resposta.innerHTML = fatorial;
+            } else {
+                fatorial += count;
+                resultado *= count;
+                resposta.innerHTML = fatorial;
+            }
+
+        }
+        resposta.innerHTML += " = " + resultado;
+    }
+
+}
+
