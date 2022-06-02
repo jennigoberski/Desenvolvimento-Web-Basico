@@ -2,11 +2,11 @@ body{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     /*topo, direita, embaixo, esquerda*/
     margin: 20px 10px 20px 10px;
-    border: 2px solid #CD5C5C;
+    border: 2px solid #430f58;
 }
 
 .cabecalho, .rodape{
-    background-color: #F08080;
+    background-color: #6643b5;
 }
 
 .cabecalho p{
@@ -23,7 +23,7 @@ body{
 }
 
 .topnav{
-    background-color: #CD5C5C;
+    background-color: #430f58;
     padding: 10px;
 }
 
@@ -44,7 +44,7 @@ body{
 }
 
 .topnav a:hover{
-    background-color: #F08080;
+    background-color: #d5def5;
     color: black;
     padding-top: 10px;
 }
@@ -63,7 +63,7 @@ body{
     padding-top: 5px;
     padding-bottom: 5px;
     margin: 0px auto 0px auto;
-    box-shadow: 1px 1px 4px #F08080;
+    box-shadow: 1px 1px 4px #d5def5;
 }
 
 .conteudo img#fotoautor{
@@ -95,7 +95,7 @@ body{
 }
 
 table#detalhes{
-    border: 1px solid #CD5C5C;
+    border: 1px solid #d5def5;
    margin:  20px auto 20px auto;
 }
 
@@ -107,25 +107,25 @@ table#detalhes caption{
 
 table#detalhes td{
     font-size: 12px;
-    border: 1px solid #793a3a;
+    border: 1px solid #430f58;
     padding: 10px;
     font-weight: bold;
 }
 
 table#detalhes td.ce{
-    background-color: #CD5C5C;
+    background-color: #6643b5;
     color: #fde4e8;
     text-align: right;
 }
 
 table#detalhes td.cd{
-    background-color:#F08080;
+    background-color:#d5def5;
     color: black;
     text-align: left;
 }
 
 hr{
-    border: 1px solid #CD5C5C;
+    border: 1px solid #8594e4;
     width:40%;
     margin-top: 20px;
     margin-bottom: 20px;
