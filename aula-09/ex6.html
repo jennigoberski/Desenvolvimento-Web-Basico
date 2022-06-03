@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 6</title>
+</head>
+<body>
+    <button id="base" onclick="ex6()">Clicar!</button>
+
+    <script>
+        function ex6() {
+            var elementoPai = document.body;
+            var elemento = document.createElement("h1");
+            var texto = document.createTextNode("Meu Deus, meu Senhor, me ajuda por favor...🐱‍🐉");
+            elemento.appendChild(texto);
+
+            elementoPai.insertBefore(elemento, document.getElementById("base"));
+
+            //elementoPai.appendChild(elemento);
+            //insere o  elemento no próximo espaço livre
+        }
+    </script>
+</body>
+</html>

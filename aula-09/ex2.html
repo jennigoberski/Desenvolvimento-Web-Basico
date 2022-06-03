@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 2</title>
+</head>
+
+<body>
+    <p>Estado civil: </p>
+
+    <label for="solteiro">Solteiro(a)🍺</label>
+    <input type="radio" name="estado_civil" id="solteiro" value="1"><br>
+
+    <label for="casado">Casado(a)👰🤵</label>
+    <input type="radio" name="estado_civil" id="casado" value="2"><br><br>
+
+    <button onclick="ex2()">Clicar!</button>
+
+    <script>
+        function ex2() {
+            //window.alert(document.getElementsByName("estado_civil")[0].value);
+            var nodes = document.getElementsByName("estado_civil");
+
+            for (let index = 0; index < nodes.length; index++) {
+                window.alert(nodes[index].value);
+            }
+        }
+    </script>
+
+</body>
+
+</html>
